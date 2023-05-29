@@ -26,6 +26,7 @@ params = dict(
 	long_description=long_description,
 	url="https://github.com/yougov/" + name,
 	packages=setuptools.find_packages(),
+	package_data={'cherrypy_cors': ['py.typed']},
 	include_package_data=True,
 	py_modules=['cherrypy_cors'],
 	namespace_packages=(
